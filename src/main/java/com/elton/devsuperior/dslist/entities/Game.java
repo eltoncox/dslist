@@ -22,14 +22,14 @@ public class Game {
 	@Column(name = "game_year")
 	private Integer year;
 	private String genre;
-	private String platforms;
+	private String platforms; 
 	private Double score;
 	private String imgUrl;
 	
 	@Column(columnDefinition = "TEXT")
 	private String shortDescription;// descrição curta do jogo
 
-	@Column(columnDefinition = "TEXT")
+	@Column(columnDefinition = "TEXT")// para não ficar preso a 255 caracteres, usei o TEXT
 	private String longDescription;
 	
     public Game() {
