@@ -13,7 +13,6 @@ import com.elton.devsuperior.dslist.entities.Game;
 import com.elton.devsuperior.dslist.projections.GameMinProjection;
 import com.elton.devsuperior.dslist.repositories.GameRepository;
 
-
 @Service
 public class GameService {
 
@@ -28,7 +27,7 @@ public class GameService {
 	
 	@Transactional(readOnly = true)
 	public List<GameMinDTO> findAll() {
-		List<Game> result = gameRepository.findAll();
+		var result = gameRepository.findAll();// var ==> list<Game>
 		return result.stream().map(GameMinDTO::new).toList();
 	}
 	

@@ -17,8 +17,8 @@ public class GameDTO {
 	private String longDescription;
 	
 	public GameDTO(Game entity) {
-		BeanUtils.copyProperties(entity, this);
-	}
+		BeanUtils.copyProperties(entity, this);// classe utilitária com o método copyProperties
+	} // fica obrigado a usar Getter e Setter 
 
 	public Long getId() {
 		return id;
