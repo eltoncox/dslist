@@ -16,7 +16,6 @@ import com.elton.devsuperior.dslist.dto.ReplacementDTO;
 import com.elton.devsuperior.dslist.service.GameListService;
 import com.elton.devsuperior.dslist.service.GameService;
 
-
 @RestController
 @RequestMapping(value = "/lists")
 public class GameListController {

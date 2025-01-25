@@ -18,5 +18,7 @@ public interface GameRepository extends JpaRepository<Game, Long> {
 			WHERE tb_belonging.list_id = :listId
 			ORDER BY tb_belonging.position
 				""")
-	List<GameMinProjection> searchByList(Long listId);
+	
+	// quando se usa o nativeQuery o resultado da consulta têm que ser uma
+	List<GameMinProjection> searchByList(Long listId);//interface GameMinProjection
 }
